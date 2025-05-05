@@ -36,16 +36,29 @@ This project is designed to help beginners understand how to:
 
 ## 🏗️ Project Structure
 
+## 📁 Project Structure
+
+```bash
 ems-backend/
 ├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/example/ems/ # Your code packages (controller, service, repository, entity)
-│ └── resources/
-│ ├── application.properties
-│ └── other resource files
-├── pom.xml # Maven config
-└── mvnw / mvnw.cmd # Maven wrapper
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── ems/
+│       │               ├── controller/
+│       │               ├── entity/
+│       │               ├── repository/
+│       │               ├── service/
+│       │               └── EmsBackendApplication.java
+│       └── resources/
+│           ├── application.properties
+│           └── other resource files
+├── pom.xml                # Maven configuration file
+├── mvnw                   # Maven wrapper script (Unix)
+├── mvnw.cmd               # Maven wrapper script (Windows)
+└── README.md              # Project documentation
+
 
 
 2. ## 🏗️ Configure Database
